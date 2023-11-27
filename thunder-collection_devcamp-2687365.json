@@ -1,0 +1,368 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687365",
+    "dateExported": "2023-11-19T19:13:52.727Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "bootcamps",
+            "containerId": "",
+            "created": "2023-11-19T18:30:35.837Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "courses",
+            "containerId": "",
+            "created": "2023-11-19T18:30:35.838Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "reviews",
+            "containerId": "",
+            "created": "2023-11-19T18:30:35.839Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-11-19T18:30:35.840Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9683b171-2e6f-48d6-9a10-450a38ce55bb",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "consultar todos los bootcamps",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-19T18:30:35.837Z",
+            "modified": "2023-11-19T18:30:35.837Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9c087f67-31f0-4b49-ba27-9c10c704b33e",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "crear bootcamp",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-11-19T18:30:35.840Z",
+            "modified": "2023-11-19T18:40:30.269Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Mysq Bootcamp\",\n  \"phone\":\"5941301\",\n  \"address\":\"Sena calle 52\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "421c71a7-1275-4c4d-859a-b55623c4a2a0",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "consultar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/6",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-19T18:30:35.839Z",
+            "modified": "2023-11-19T18:30:35.839Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f42477de-800d-4a56-bdc6-79f2c29d313b",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "actualizar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/6553e2481cd4d7bba3c76ee2",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2023-11-19T18:30:35.841Z",
+            "modified": "2023-11-19T18:30:35.841Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Python Bootcamp\",\n  \"phone\":\"5941301\",\n  \"address\":\"Sena Fontibon\",\n  \"topics\": [\n    \"BackEnd\"\n    ]\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "63c6df25-7786-46d0-82b0-1cd3d4b01f64",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "bd8888ff-ec9a-4b93-a6bf-6ada82dafba1",
+            "name": "Eliminar bootcamp por id Copy",
+            "url": "http://127.0.0.1:5000/bootcamps/1",
+            "method": "DELETE",
+            "sortNum": 27500,
+            "created": "2023-11-19T18:30:35.842Z",
+            "modified": "2023-11-19T18:30:35.842Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "edc39d55-96fc-4800-8437-8b044d95f5fe",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "consultar todos los cursos",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T18:30:35.843Z",
+            "modified": "2023-11-19T18:30:35.843Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f5a9a78c-e8a6-4b34-9aaa-19b7e9117e57",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "crear todos courses ",
+            "url": "http://127.0.0.1:5000/courses",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-19T18:30:35.844Z",
+            "modified": "2023-11-19T19:11:43.369Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Paz\",\n  \"description\":\"curso de sql\",\n  \"weeks\":\"1.1\",\n  \"enroll_cost\":\"1\",\n  \"minimum_skill\" :\"Expert\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ead9b95-d6e8-430e-90d3-ec18b92fa502",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "consultar courses por id ",
+            "url": "http://127.0.0.1:5000/courses/655a5623eac60d211738f037",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-19T18:30:35.845Z",
+            "modified": "2023-11-19T18:41:20.260Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b0ea26b1-4685-4a9f-8ec7-216997e7d224",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "actualizar course por id ",
+            "url": "http://127.0.0.1:5000/courses/655a5623eac60d211738f037",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-19T18:30:35.846Z",
+            "modified": "2023-11-19T18:42:07.533Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Mysql\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d9297d80-4163-429f-abdb-21c2b53693c9",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "ef0a1e65-b770-485b-9a90-b4411d2bd0e7",
+            "name": "Eliminar  courses por id ",
+            "url": "http://127.0.0.1:5000/courses/655a5623eac60d211738f037",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-11-19T18:30:35.847Z",
+            "modified": "2023-11-19T18:43:21.961Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"curso de java \"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "64582129-d065-4bda-91b4-fb54ec3bc2b4",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "consultar todos los reviews",
+            "url": "http://127.0.0.1:5000/reviews",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-11-19T18:30:35.848Z",
+            "modified": "2023-11-19T18:30:35.848Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "05ba4780-c5c0-4bf6-9b63-6c18eea23efb",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "crear todos los reviews",
+            "url": "http://127.0.0.1:5000/reviews",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-11-19T18:30:35.849Z",
+            "modified": "2023-11-19T19:13:35.272Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Nota de juanito\",\n  \"text\": \"Paila pa le fue re mal\",\n  \"rating\": \"1,1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a940a6a-6b3a-484b-a45d-411a9c8d9294",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "consultar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a58d2d9e589061128e016",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-11-19T18:30:35.850Z",
+            "modified": "2023-11-19T18:51:21.911Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7391e06f-5472-432e-857d-470563a7915c",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "actualizar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a58d2d9e589061128e016",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-11-19T18:30:35.851Z",
+            "modified": "2023-11-19T18:51:51.677Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Nota de Cesar\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "281dbb1c-c3e3-4f3b-bc77-b97a36173c77",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "5df8912a-5236-43e7-af68-9fcae9494dcc",
+            "name": "Eliminar reviews por id",
+            "url": "http://127.0.0.1:5000/reviews/655a58d2d9e589061128e016",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-11-19T18:30:35.852Z",
+            "modified": "2023-11-19T18:52:09.498Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "449f5c10-2f9d-4e15-ad15-ff1bd70ea47e",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "Consultar todos los users",
+            "url": "http://127.0.0.1:5000/users",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-11-19T18:30:35.853Z",
+            "modified": "2023-11-19T18:30:35.853Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4bbe71bc-50cf-4992-8a34-3d8bbd2040d3",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "Crear todos los users",
+            "url": "http://127.0.0.1:5000/users",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-11-19T18:30:35.854Z",
+            "modified": "2023-11-19T18:30:35.854Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f1660dc-88d1-4f88-9c0b-6965cb1ba61d",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "Consultar users por id",
+            "url": "http://127.0.0.1:5000/users/2",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-11-19T18:30:35.855Z",
+            "modified": "2023-11-19T18:30:35.855Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "73440921-763c-40c9-a261-4c33a55a60fe",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "Actualizar users por id",
+            "url": "http://127.0.0.1:5000/users/1",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-11-19T18:30:35.856Z",
+            "modified": "2023-11-19T18:30:35.856Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9aa2403f-0cd7-403c-9e8b-87d0822e5382",
+            "colId": "1b1b2df9-9d54-4b99-b7b0-8f7f37012f17",
+            "containerId": "dd1ed141-cb97-4a0e-99f3-6272465671b7",
+            "name": "Eliminar users por id",
+            "url": "http://127.0.0.1:5000/users/2",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-11-19T18:30:35.857Z",
+            "modified": "2023-11-19T18:30:35.857Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
